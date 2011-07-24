@@ -30,6 +30,11 @@ module Ecm
           generate("controller", "Admin", "index", options)
         end
         
+        def generate_remove_admin_registrations
+          gsub_file 'config/routes.rb', /devise_for :admins/, 'devise_for :admins, :skip => :registrations'
+          inject_into_file "config/initializers/devise.rb", "  config.scoped_views = true", :after => "  # config.scoped_views = false"          
+        end
+        
         def generate_admin_controller_content
           inject_into_class "app/controllers/admin_controller.rb", "AdminController" do
 <<-eos

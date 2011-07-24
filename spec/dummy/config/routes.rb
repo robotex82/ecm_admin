@@ -1,7 +1,7 @@
 Dummy::Application.routes.draw do
   get "admin/index"
 
-  devise_for :admins
+  devise_for :admins, :skip => :registrations
 
   root :to => 'home#index'
 
