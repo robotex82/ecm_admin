@@ -1,0 +1,2 @@
+module EcmAdmin
+end
