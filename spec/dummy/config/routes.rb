@@ -1,4 +1,12 @@
 Dummy::Application.routes.draw do
+  get "admin/index"
+
+  devise_for :admins
+
+  root :to => 'home#index'
+
+  get "home/index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
