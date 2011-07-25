@@ -3,9 +3,8 @@ module Ecm
     class Engine < Rails::Engine
       config.to_prepare do
         ApplicationController.helper(Ecm::AdminHelper)
-        Devise::SessionsController.layout Proc.new do |controller| 
-          controller.devise_controller? && controller.resource_name == :admin ? 'ecm/admin' : 'application' 
-        end
+        Devise::SessionsController.layout Proc.new { |controller| controller.devise_controller? && controller.resource_name == :admin ? 'ecm/admin' : 'application' }
+
       end  
     end
     
