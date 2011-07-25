@@ -1,5 +1,7 @@
 module Ecm
   module AdminHelper
-    include RailsAdmin::ApplicationHelper if defined? RailsAdmin::ApplicationHelper
+    begin
+      include RailsAdmin::ApplicationHelper
+    end
   end
 end  
