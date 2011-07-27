@@ -14,7 +14,7 @@ describe AdminController do
         sign_in Factory(:admin)
       end
       
-      it "should deny access" do
+      it "should render the correct template" do
         get :index      
         response.should render_template('index')
       end    
