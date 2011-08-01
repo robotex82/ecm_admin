@@ -9,13 +9,13 @@ module Ecm
              
         source_root File.expand_path('../templates', __FILE__)
 
-        def generate_ecm_frontend
-          generate 'ecm:frontend:install'
-        end
+#        def generate_ecm_frontend
+#          generate 'ecm:frontend:install'
+#        end
 
-        def generate_devise
-          generate 'devise:install'
-        end
+#        def generate_devise
+#          generate 'devise:install'
+#        end
         
         def generate_create_admin_user
           generate 'devise', 'Admin'
