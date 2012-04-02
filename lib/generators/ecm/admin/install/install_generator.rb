@@ -10,6 +10,10 @@ module Ecm
         def generate_locales
           generate 'ecm:admin:locales'
         end
+        
+        def generate_admin_user_resource
+          generate 'ecm:admin:admin_user_resource'
+        end        
       end
     end
   end
