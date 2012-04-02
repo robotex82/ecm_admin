@@ -18,4 +18,4 @@ end
 gem 'ecm_core', :git => 'git://github.com/robotex82/ecm_core.git'
 gem 'ecm_frontend', :git => 'git://github.com/robotex82/ecm_frontend.git'
 gem 'devise' # Devise must be required before RailsAdmin
-gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
+gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git', :branch => 'rails-3.0'
