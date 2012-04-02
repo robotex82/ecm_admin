@@ -7,9 +7,9 @@ require "ecm_admin/version"
 Gem::Specification.new do |s|
   s.name        = "ecm_admin"
   s.version     = EcmAdmin::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
+  s.authors     = ["Roberto Vásquez Angel"]
+  s.email       = ["roberto@vasquez-angel.de"]
+  s.homepage    = "http://blog.robotex.de"
   s.summary     = "TODO: Summary of EcmAdmin."
   s.description = "TODO: Description of EcmAdmin."
 
@@ -17,6 +17,7 @@ Gem::Specification.new do |s|
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 3.2.3"
+  s.add_dependency 'activeadmin', :git => 'git://github.com/gregbell/active_admin.git'
 
   s.add_development_dependency "sqlite3"
 end
