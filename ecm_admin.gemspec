@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.description = "Insert EcmAdmin description."
   s.files = Dir["{app,lib,config}/**/*"] + ["MIT-LICENSE", "Rakefile", "Gemfile", "README.rdoc"]
   s.version = "0.0.1"
-  s.add_dependency "ecm_frontend"
+  s.add_dependency "ecm_frontend-legacy"
   s.add_dependency "devise"
   s.add_dependency "rails_admin"
 end
